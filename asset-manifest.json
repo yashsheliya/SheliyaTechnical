@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/SheliyaTechnical/static/css/main.80f90f78.css",
+    "main.js": "/SheliyaTechnical/static/js/main.9e31506e.js",
+    "static/js/453.24d89ec9.chunk.js": "/SheliyaTechnical/static/js/453.24d89ec9.chunk.js",
+    "static/media/4.jpg": "/SheliyaTechnical/static/media/4.4e01df5a14577e474585.jpg",
+    "static/media/6.jpg": "/SheliyaTechnical/static/media/6.46270918fc7d5ee7f5b3.jpg",
+    "static/media/2.jpg": "/SheliyaTechnical/static/media/2.a6694c8beac984179f61.jpg",
+    "static/media/5.jpg": "/SheliyaTechnical/static/media/5.05a8d0494e6e49d77061.jpg",
+    "static/media/3.jpg": "/SheliyaTechnical/static/media/3.bcc385a714ac48ad4eb5.jpg",
+    "static/media/1.jpg": "/SheliyaTechnical/static/media/1.0af3b6e19d40282350fb.jpg",
+    "static/media/AboutUsPage.svg": "/SheliyaTechnical/static/media/AboutUsPage.bb45e9e4808ae3b55fd46defc7934321.svg",
+    "static/media/Webinar-bro.svg": "/SheliyaTechnical/static/media/Webinar-bro.25304fbd8d0103dcad807258c0196675.svg",
+    "static/media/LogoReactJsWeb.svg": "/SheliyaTechnical/static/media/LogoReactJsWeb.48def16a96863b904bc43436baf99c1c.svg",
+    "index.html": "/SheliyaTechnical/index.html",
+    "main.80f90f78.css.map": "/SheliyaTechnical/static/css/main.80f90f78.css.map",
+    "main.9e31506e.js.map": "/SheliyaTechnical/static/js/main.9e31506e.js.map",
+    "453.24d89ec9.chunk.js.map": "/SheliyaTechnical/static/js/453.24d89ec9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80f90f78.css",
+    "static/js/main.9e31506e.js"
+  ]
+}
