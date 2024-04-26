@@ -7,7 +7,7 @@ const Similar = (props) => {
       <section id='header' className='py-5'>
         <div className='container'>
           <div className='row justify-content-center align-items-center'>
-            <div className='col-md-6'>
+            <div className='col-md-6 text-center  text-lg-start'> 
               <h2 className='mb-3'>{props.name} <span className='brand-name'>{props.brandNname}</span></h2>
               <p className='mb-3'>{props.des}</p>
               <NavLink to={props.BtnLink} className='get-started'>{props.ButName} </NavLink>
@@ -22,4 +22,4 @@ const Similar = (props) => {
   )
 }
 
-export default Similar
+export default Similar;
