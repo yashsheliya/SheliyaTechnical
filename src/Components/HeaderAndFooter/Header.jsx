@@ -20,7 +20,7 @@ const Header = () => {
         <>
             <header className='bg-light'>
                 <div className='container mx-auto nav_bg '>
-                    <nav className="navbar navbar-expand-lg navbar-light pb-4 py-lg-2">
+                    <nav className="navbar navbar-expand-lg navbar-light">
 
                         <Link className="logo-header" to="/"><img src={Logo} alt='Logo' /></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
