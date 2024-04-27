@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SheliyaTechnical/static/css/main.741e819b.css",
-    "main.js": "/SheliyaTechnical/static/js/main.6d19a8f3.js",
+    "main.css": "/SheliyaTechnical/static/css/main.7ae6e7a6.css",
+    "main.js": "/SheliyaTechnical/static/js/main.c600a0e1.js",
     "static/js/453.24d89ec9.chunk.js": "/SheliyaTechnical/static/js/453.24d89ec9.chunk.js",
     "static/media/4.jpg": "/SheliyaTechnical/static/media/4.4e01df5a14577e474585.jpg",
     "static/media/6.jpg": "/SheliyaTechnical/static/media/6.46270918fc7d5ee7f5b3.jpg",
@@ -13,12 +13,12 @@
     "static/media/Webinar-bro.svg": "/SheliyaTechnical/static/media/Webinar-bro.25304fbd8d0103dcad807258c0196675.svg",
     "static/media/LogoReactJsWeb.svg": "/SheliyaTechnical/static/media/LogoReactJsWeb.48def16a96863b904bc43436baf99c1c.svg",
     "index.html": "/SheliyaTechnical/index.html",
-    "main.741e819b.css.map": "/SheliyaTechnical/static/css/main.741e819b.css.map",
-    "main.6d19a8f3.js.map": "/SheliyaTechnical/static/js/main.6d19a8f3.js.map",
+    "main.7ae6e7a6.css.map": "/SheliyaTechnical/static/css/main.7ae6e7a6.css.map",
+    "main.c600a0e1.js.map": "/SheliyaTechnical/static/js/main.c600a0e1.js.map",
     "453.24d89ec9.chunk.js.map": "/SheliyaTechnical/static/js/453.24d89ec9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.741e819b.css",
-    "static/js/main.6d19a8f3.js"
+    "static/css/main.7ae6e7a6.css",
+    "static/js/main.c600a0e1.js"
   ]
 }
