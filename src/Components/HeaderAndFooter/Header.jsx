@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <header className='bg-light'>
+            <header className='my-bg'>
                 <div className='container mx-auto nav_bg '>
                     <nav className="navbar navbar-expand-lg navbar-light">
 
@@ -45,7 +45,7 @@ const Header = () => {
                                 <div className='d-flex align-items-center'>
                                     {isAuthenticated && (
                                         <>
-                                            <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <div className='ms-0 ms-lg-3' data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <img src={user.picture} alt={user.name} className='user-img-menu-top' />
                                             </div>
                                             <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -74,7 +74,7 @@ const Header = () => {
                                 </div>
                                 {
                                     isAuthenticated ? (<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='btn-hed-lis ms-3'>Log Out </button>)
-                                        : (<button onClick={() => loginWithRedirect()} className='btn-hed-lis '>Log In</button>)
+                                        : (<button onClick={() => loginWithRedirect()} className='btn-hed-lis ms-0 ms-lg-3'>Log In</button>)
                                 }
                             </div>
                         </div>
