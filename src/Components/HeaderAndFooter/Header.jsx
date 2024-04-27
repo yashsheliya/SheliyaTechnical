@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../images/LogoReactJsWeb.svg';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
     const location = useLocation();
@@ -13,6 +14,7 @@ const Header = () => {
     const isActive = (path) => {
         return path === activeLink ? 'active' : '';
     };
+    const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
     return (
         <>
@@ -38,7 +40,41 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link className={`nav-link ${isActive('/contact')}`} to="/contact">Contact</Link>
                                 </li>
+                                <li className='mx-3 d-flex align-items-center'>
+                                    {isAuthenticated && (
+                                        <>
+                                            <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img src={user.picture} alt={user.name} className='user-img-menu-top' />
+                                            </div>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">My Profile</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div className='d-flex gap-2'>
+                                                                <div className='user-propil-img'>
+                                                                    <img src={user.picture} alt={user.name} className='rounded'/>
+                                                                </div>
+                                                                <div>
+                                                                    <h2 className='fs-5'>{user.name}</h2>
+                                                                    <p className='fs-6'>{user.email}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )}
+                                </li>
                             </ul>
+                            {
+                                isAuthenticated ? (<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='btn-hed-lis'>Log Out </button>)
+                                    : (<button onClick={() => loginWithRedirect()} className='btn-hed-lis'>Log In</button>)
+                            }
                         </div>
                     </nav>
                 </div>

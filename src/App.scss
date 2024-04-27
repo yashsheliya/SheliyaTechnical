@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 $seme-color:#565387;
+$white-color:#ffffff;
+$sen-color:#f2f2f2;
+$hov-color:#3c3a69;
+
+
+
 
 body{
   font-family: "Rubik", sans-serif !important;
@@ -23,20 +29,20 @@ body .navbar-nav .nav-link.active ,body .navbar-nav .nav-link:hover{
   border-radius: 30px;
   padding: 10px 40px;
   transition: 0.5s;
-  background-color: #f2f2f2;
+  background-color: $sen-color;
   color: $seme-color;
   text-decoration: none;
   display: inline-block;
 }
 .get-started:hover{
   background-color:  $seme-color;
-  color: #fff;
+  color: $white-color;
 }
 .btn-cat-des{
   border: 1px solid $seme-color;
   border-radius: 6px;
   transition: 0.5s;
-  background-color: #f2f2f2;
+  background-color: $sen-color;
   color: $seme-color;
   text-decoration: none;
   text-align: center;
@@ -44,14 +50,14 @@ body .navbar-nav .nav-link.active ,body .navbar-nav .nav-link:hover{
 }
 .btn-cat-des:hover{
   background-color:  $seme-color;
-  color: #fff;
+  color: $white-color;
 }
 .btn-submit{
   border: 1px solid $seme-color;
   border-radius: 10px;
   width: 100%;
   transition: 0.5s;
-  background-color: #f2f2f2;
+  background-color: $sen-color;
   color: $seme-color;
   text-decoration: none;
   text-align: center;
@@ -59,7 +65,7 @@ body .navbar-nav .nav-link.active ,body .navbar-nav .nav-link:hover{
 }
 .btn-submit:hover{
   background-color:  $seme-color;
-  color: #fff;
+  color: $white-color;
 }
 body .navbar-toggler:focus{
   box-shadow: none;
@@ -67,6 +73,26 @@ body .navbar-toggler:focus{
 body .form-control:focus{
   border-color: $seme-color;
   box-shadow: 0 0 0 .25rem $seme-color;
+}
+.user-img-menu-top{
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+.user-propil-img img{
+  width: 60px;
+  height: 60px;
+}
+.btn-hed-lis {
+  border-radius: 6px;
+  padding: 10px 30px;
+  border: 0px;
+  color: $white-color;
+  background-color: $seme-color;
+  transition: 0.5s;
+}
+.btn-hed-lis:hover {
+  background-color: $hov-color;
 }
 @keyframes moveUpDown {
   0% {
