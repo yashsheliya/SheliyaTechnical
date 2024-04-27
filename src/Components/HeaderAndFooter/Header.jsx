@@ -20,7 +20,7 @@ const Header = () => {
         <>
             <header className='bg-light'>
                 <div className='container mx-auto nav_bg '>
-                    <nav className="navbar navbar-expand-lg navbar-light">
+                    <nav className="navbar navbar-expand-lg navbar-light pb-4 py-lg-2">
 
                         <Link className="logo-header" to="/"><img src={Logo} alt='Logo' /></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,23 +40,25 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link className={`nav-link ${isActive('/contact')}`} to="/contact">Contact</Link>
                                 </li>
-                                <li className='mx-3 d-flex align-items-center'>
+                            </ul>
+                            <div className='d-flex'>
+                                <div className='d-flex align-items-center'>
                                     {isAuthenticated && (
                                         <>
                                             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <img src={user.picture} alt={user.name} className='user-img-menu-top' />
                                             </div>
-                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">My Profile</h5>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div className="modal-dialog">
+                                                    <div className="modal-content">
+                                                        <div className="modal-header">
+                                                            <h5 className="modal-title" id="exampleModalLabel">My Profile</h5>
+                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
-                                                        <div class="modal-body">
+                                                        <div className="modal-body">
                                                             <div className='d-flex gap-2'>
                                                                 <div className='user-propil-img'>
-                                                                    <img src={user.picture} alt={user.name} className='rounded'/>
+                                                                    <img src={user.picture} alt={user.name} className='rounded' />
                                                                 </div>
                                                                 <div>
                                                                     <h2 className='fs-5'>{user.name}</h2>
@@ -69,12 +71,12 @@ const Header = () => {
                                             </div>
                                         </>
                                     )}
-                                </li>
-                            </ul>
-                            {
-                                isAuthenticated ? (<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='btn-hed-lis'>Log Out </button>)
-                                    : (<button onClick={() => loginWithRedirect()} className='btn-hed-lis'>Log In</button>)
-                            }
+                                </div>
+                                {
+                                    isAuthenticated ? (<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='btn-hed-lis ms-3'>Log Out </button>)
+                                        : (<button onClick={() => loginWithRedirect()} className='btn-hed-lis '>Log In</button>)
+                                }
+                            </div>
                         </div>
                     </nav>
                 </div>
